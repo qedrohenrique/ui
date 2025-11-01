@@ -1,0 +1,17 @@
+{
+  "name": "@qedrohenrique/create-collapsible-drawer",
+  "version": "1.0.0",
+  "bin": {
+    "create-collapsible-drawer": "bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "template",
+    "README.md"
+  ],
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.2.0"
+  }
+}

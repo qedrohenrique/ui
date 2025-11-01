@@ -16,6 +16,9 @@ export default function Home() {
           <Button variant="link" asChild>
             <Link href="/expandable-timeline">Expandable Timeline</Link>
           </Button>
+          <Button variant="link" asChild>
+            <Link href="/collapsible-drawer">Collapsible Drawer</Link>
+          </Button>
         </div>
       </div>
     </main>
