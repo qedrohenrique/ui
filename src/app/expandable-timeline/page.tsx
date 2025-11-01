@@ -92,7 +92,7 @@ export default function ExpandableTimelinePage() {
   };
 
   return (
-    <div className="flex flex-col mt-32 font-[family-name:var(--font-geist-sans)] items-center  h-screen">
+    <div className="flex flex-col mt-32 font-[family-name:var(--font-geist-sans)] items-center  h-100vh">
       <div className="flex flex-col gap-4 p-4 rounded-md border border-foreground/10 w-fit">
         <div>
           <h1 className="text-2xl font-bold">Expandable Timeline</h1>
