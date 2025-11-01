@@ -17,39 +17,31 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Multi Select Animated",
-    template: "%s | Multi Select Animated",
+    default: "UI Components",
+    template: "%s | UI Components",
   },
   description:
-    "Multi-select React component with animations, built with shadcn/ui.",
+    "UI Components with animations, built with shadcn/ui.",
   keywords: [
-    "multi-select",
     "react",
-    "component",
+    "components",
     "shadcn",
-    "animated",
+    "ui",
     "Next.js",
     "TypeScript",
   ],
   authors: [{ name: "Henrique", url: "https://github.com/qedrohenrique" }],
   openGraph: {
-    title: "Multi Select Animated",
+    title: "UI Components",
     description:
-      "Multi-select React component with animations, built with shadcn/ui.",
-    url: "https://multi-select-animated.vercel.app",
-    siteName: "Multi Select Animated",
+      "UI Components with animations, built with shadcn/ui.",
+    url: "https://ui-iota-nine.vercel.app",
+    siteName: "UI Components",
     locale: "en_US",
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Multi Select Animated",
-    description:
-      "Multi-select React component with animations, built with shadcn/ui.",
-    creator: "@seu_twitter",
-  },
   alternates: {
-    canonical: "https://multi-select-animated.vercel.app",
+    canonical: "https://ui-components.vercel.app",
   },
   robots: {
     index: true,
