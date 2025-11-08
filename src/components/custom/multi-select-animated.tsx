@@ -46,8 +46,17 @@ export default function MultiSelectAnimated({
 
   const handleSelectAll = () => {
     if (selectedItems.length === options.length) {
+      selectedItems.forEach((item) => {
+        onDeselect?.(item);
+      });
       setSelectedItems([]);
     } else {
+      const itemsToAdd = options.filter(
+        (option) => !selectedItems.find((selected) => selected.id === option.id)
+      );
+      itemsToAdd.forEach((item) => {
+        onSelect?.(item);
+      });
       setSelectedItems(options);
     }
   };
@@ -176,6 +185,9 @@ export default function MultiSelectAnimated({
                         }}
                         onClick={(e) => {
                           e.stopPropagation();
+                          selectedItems.forEach((item) => {
+                            onDeselect?.(item);
+                          });
                           setSelectedItems([]);
                         }}
                         className="hover:bg-primary/20 rounded-full p-0.5"
@@ -235,7 +247,9 @@ export default function MultiSelectAnimated({
               </>
             ) : (
               <div className="flex items-center justify-center h-full">
-                <p className="text-muted-foreground py-6 px-2">No options found</p>
+                <p className="text-muted-foreground py-6 px-2">
+                  No options found
+                </p>
               </div>
             )}
           </PopoverContent>

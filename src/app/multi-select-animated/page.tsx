@@ -71,21 +71,30 @@ export default function MultiSelectAnimatedPage() {
           initialSelectedItems={selectedItems}
           placeholder="Select options"
           onSelect={(item) => {
-            setSelectedItems([...selectedItems, item]);
+            setSelectedItems((prev) => {
+              if (prev.find((i) => i.id === item.id)) {
+                return prev;
+              }
+              return [...prev, item];
+            });
           }}
           onDeselect={(item) => {
-            setSelectedItems(selectedItems.filter((i) => i.id !== item.id));
+            setSelectedItems((prev) => prev.filter((i) => i.id !== item.id));
           }}
           triggerClassName="w-full max-w-80"
         />
         <Button
-          onClick={() =>
-            toast.success(
-              `Submitted items: ${selectedItems
-                .map((i) => i.content)
-                .join(", ")}`
-            )
-          }
+          onClick={() => {
+            if (selectedItems.length > 0) {
+              toast.success(
+                `Submitted items: ${selectedItems
+                  .map((i) => i.content)
+                  .join(", ")}`
+              );
+            } else {
+              toast.error("No items selected");
+            }
+          }}
         >
           Submit
         </Button>

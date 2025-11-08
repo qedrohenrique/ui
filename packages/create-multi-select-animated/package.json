@@ -1,6 +1,6 @@
 {
   "name": "@qedrohenrique/create-multi-select-animated",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "bin": {
     "create-multi-select-animated": "bin/cli.js"
   },
