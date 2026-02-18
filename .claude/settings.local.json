@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(dir:*)",
+      "Bash(cmd /c \"echo test\")",
+      "Bash(cmd /c \"if exist D:\\\\projects\\\\ui\\\\package-lock.json \\(echo FOUND\\) else \\(echo NOT_FOUND\\)\")",
+      "Bash(cmd /c \"if exist D:\\\\projects\\\\ui\\\\bun.lockb \\(echo FOUND\\) else \\(echo NOT_FOUND\\)\")",
+      "Bash(cmd /c dir \"D:\\\\projects\\\\ui\" /b)",
+      "Bash(cmd /c \"dir D:\\\\projects\\\\ui /b\")",
+      "Bash(powershell -Command \"Get-ChildItem ''D:\\\\projects\\\\ui'' | Select-Object Name\")",
+      "Bash(powershell -Command \"Test-Path ''D:\\\\projects\\\\ui\\\\package-lock.json''\")",
+      "Bash(powershell -Command \"Test-Path ''D:\\\\projects\\\\ui\\\\bun.lockb''\")",
+      "Bash(powershell -Command \"Set-Location ''D:\\\\projects\\\\ui''; bun install 2>&1\")"
+    ]
+  }
+}
