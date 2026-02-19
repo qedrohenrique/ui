@@ -11,10 +11,11 @@ export default function StatefullButtonPage() {
   const [buttonState, setButtonState] =
     useState<React.ComponentProps<typeof StatefullButton>["phase"]>("idle");
 
+  const INSTALL_CMD =
+    "npx shadcn@latest add https://multi-select-animated.vercel.app/r/statefull-button.json";
+
   const handleCopy = () => {
-    navigator.clipboard.writeText(
-      "npx @qedrohenrique/create-statefull-button@latest"
-    );
+    navigator.clipboard.writeText(INSTALL_CMD);
     toast.success("Copied to clipboard");
   };
 
@@ -40,7 +41,7 @@ export default function StatefullButtonPage() {
         </StatefullButton>
       </div>
       <span className="text-sm text-muted-foreground my-4 border border-foreground/10 rounded-md p-2 flex items-center gap-2">
-        npx @qedrohenrique/create-statefull-button@latest
+        {INSTALL_CMD}
         <Separator orientation="vertical" />
         <CopyIcon className="w-4 h-4 cursor-pointer" onClick={handleCopy} />
       </span>
@@ -49,7 +50,7 @@ export default function StatefullButtonPage() {
         onClick={() =>
           window.open(
             "https://github.com/qedrohenrique/ui/blob/master/src/components/custom/statefull-button.tsx",
-            "_blank"
+            "_blank",
           )
         }
       >

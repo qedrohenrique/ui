@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "collapsible-drawer",
+  "title": "Collapsible Drawer",
+  "description": "A collapsible drawer component that slides in from any side, with pin and hover-collapse support.",
+  "type": "registry:component",
+  "registryDependencies": ["button", "separator"],
+  "dependencies": ["class-variance-authority", "lucide-react", "motion"],
+  "files": [
+    {
+      "path": "components/custom/collapsible-drawer.tsx",
+      "type": "registry:component",
+      "target": "src/components/custom/collapsible-drawer.tsx"
+    }
+  ]
+}

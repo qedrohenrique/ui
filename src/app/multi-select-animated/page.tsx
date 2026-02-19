@@ -52,10 +52,11 @@ export default function MultiSelectAnimatedPage() {
   const [selectedItems, setSelectedItems] =
     useState<ContentItem[]>(contentLorem);
 
+  const INSTALL_CMD =
+    "npx shadcn@latest add https://multi-select-animated.vercel.app/r/multi-select-animated.json";
+
   const handleCopy = () => {
-    navigator.clipboard.writeText(
-      "npx @qedrohenrique/create-multi-select-animated@latest"
-    );
+    navigator.clipboard.writeText(INSTALL_CMD);
     toast.success("Copied to clipboard");
   };
 
@@ -89,7 +90,7 @@ export default function MultiSelectAnimatedPage() {
               toast.success(
                 `Submitted items: ${selectedItems
                   .map((i) => i.content)
-                  .join(", ")}`
+                  .join(", ")}`,
               );
             } else {
               toast.error("No items selected");
@@ -100,7 +101,7 @@ export default function MultiSelectAnimatedPage() {
         </Button>
       </div>
       <span className="text-sm text-muted-foreground my-4 border border-foreground/10 rounded-md p-2 flex items-center gap-2">
-        npx @qedrohenrique/create-multiselect-animated@latest
+        {INSTALL_CMD}
         <Separator orientation="vertical" />
         <CopyIcon className="w-4 h-4 cursor-pointer" onClick={handleCopy} />
       </span>
@@ -109,7 +110,7 @@ export default function MultiSelectAnimatedPage() {
         onClick={() =>
           window.open(
             "https://github.com/qedrohenrique/ui/blob/master/src/components/custom/multi-select-animated.tsx",
-            "_blank"
+            "_blank",
           )
         }
       >

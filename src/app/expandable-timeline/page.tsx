@@ -55,10 +55,11 @@ const items = [
 ];
 
 export default function ExpandableTimelinePage() {
+  const INSTALL_CMD =
+    "npx shadcn@latest add https://multi-select-animated.vercel.app/r/expandable-timeline.json";
+
   const handleCopy = () => {
-    navigator.clipboard.writeText(
-      "npx @qedrohenrique/create-expandable-timeline@latest"
-    );
+    navigator.clipboard.writeText(INSTALL_CMD);
     toast.success("Copied to clipboard");
   };
 
@@ -82,9 +83,7 @@ export default function ExpandableTimelinePage() {
                 <item.icon size={14} />
               </TimelineIndicator>
             </TimelineHeader>
-            <TimelineContent>
-              {item.description}
-            </TimelineContent>
+            <TimelineContent>{item.description}</TimelineContent>
           </TimelineItem>
         ))}
       </Timeline>
@@ -101,7 +100,7 @@ export default function ExpandableTimelinePage() {
         <TimelineDemo />
       </div>
       <span className="text-sm text-muted-foreground my-4 border border-foreground/10 rounded-md p-2 flex items-center gap-2">
-        npx @qedrohenrique/create-expandable-timeline@latest
+        {INSTALL_CMD}
         <Separator orientation="vertical" />
         <CopyIcon className="w-4 h-4 cursor-pointer" onClick={handleCopy} />
       </span>
@@ -110,7 +109,7 @@ export default function ExpandableTimelinePage() {
         onClick={() =>
           window.open(
             "https://github.com/qedrohenrique/ui/blob/master/src/components/custom/timeline.tsx",
-            "_blank"
+            "_blank",
           )
         }
       >

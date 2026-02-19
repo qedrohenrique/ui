@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "multi-select-animated",
+  "title": "Multi Select Animated",
+  "description": "An animated multi-select dropdown with search, select all, and spring animations.",
+  "type": "registry:component",
+  "registryDependencies": ["button", "popover", "input", "separator"],
+  "dependencies": ["lucide-react", "motion"],
+  "files": [
+    {
+      "path": "components/custom/multi-select-animated.tsx",
+      "type": "registry:component",
+      "target": "src/components/custom/multi-select-animated.tsx"
+    }
+  ]
+}

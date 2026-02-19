@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "statefull-button",
+  "title": "Statefull Button",
+  "description": "A button with animated phase transitions between idle, loading, and success states.",
+  "type": "registry:component",
+  "registryDependencies": ["button"],
+  "dependencies": ["lucide-react", "motion"],
+  "files": [
+    {
+      "path": "components/custom/statefull-button.tsx",
+      "type": "registry:component",
+      "target": "src/components/custom/statefull-button.tsx"
+    }
+  ]
+}

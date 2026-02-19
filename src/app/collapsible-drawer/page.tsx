@@ -13,10 +13,11 @@ import CollapsibleDrawer, {
 } from "@/components/custom/collapsible-drawer";
 
 export default function CollapsibleDrawerPage() {
+  const INSTALL_CMD =
+    "npx shadcn@latest add https://multi-select-animated.vercel.app/r/collapsible-drawer.json";
+
   const handleCopy = () => {
-    navigator.clipboard.writeText(
-      "npx @qedrohenrique/create-collapsible-drawer@latest"
-    );
+    navigator.clipboard.writeText(INSTALL_CMD);
     toast.success("Copied to clipboard");
   };
 
@@ -29,7 +30,7 @@ export default function CollapsibleDrawerPage() {
         </div>
         <div className="grid grid-cols-2 gap-4">
           <CollapsibleDrawer side="right">
-            <CollapsibleDrawerTrigger>
+            <CollapsibleDrawerTrigger asChild>
               <Button>Open Right</Button>
             </CollapsibleDrawerTrigger>
             <CollapsibleDrawerContent>
@@ -45,7 +46,7 @@ export default function CollapsibleDrawerPage() {
           </CollapsibleDrawer>
 
           <CollapsibleDrawer side="left">
-            <CollapsibleDrawerTrigger>
+            <CollapsibleDrawerTrigger asChild>
               <Button>Open Left</Button>
             </CollapsibleDrawerTrigger>
             <CollapsibleDrawerContent>
@@ -61,7 +62,7 @@ export default function CollapsibleDrawerPage() {
           </CollapsibleDrawer>
 
           <CollapsibleDrawer side="top">
-            <CollapsibleDrawerTrigger>
+            <CollapsibleDrawerTrigger asChild>
               <Button>Open Top</Button>
             </CollapsibleDrawerTrigger>
             <CollapsibleDrawerContent>
@@ -77,7 +78,7 @@ export default function CollapsibleDrawerPage() {
           </CollapsibleDrawer>
 
           <CollapsibleDrawer side="bottom">
-            <CollapsibleDrawerTrigger>
+            <CollapsibleDrawerTrigger asChild>
               <Button>Open Bottom</Button>
             </CollapsibleDrawerTrigger>
             <CollapsibleDrawerContent>
@@ -94,7 +95,7 @@ export default function CollapsibleDrawerPage() {
         </div>
       </div>
       <span className="text-sm text-muted-foreground my-4 border border-foreground/10 rounded-md p-2 flex items-center gap-2">
-        npx @qedrohenrique/create-collapsible-drawer@latest
+        {INSTALL_CMD}
         <Separator orientation="vertical" />
         <CopyIcon className="w-4 h-4 cursor-pointer" onClick={handleCopy} />
       </span>
@@ -103,7 +104,7 @@ export default function CollapsibleDrawerPage() {
         onClick={() =>
           window.open(
             "https://github.com/qedrohenrique/ui/blob/master/src/components/custom/collapsible-drawer.tsx",
-            "_blank"
+            "_blank",
           )
         }
       >

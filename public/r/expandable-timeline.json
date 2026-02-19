@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "expandable-timeline",
+  "title": "Expandable Timeline",
+  "description": "An expandable timeline component with collapsible content items and step indicators.",
+  "type": "registry:component",
+  "registryDependencies": ["button"],
+  "dependencies": ["lucide-react", "motion", "radix-ui"],
+  "files": [
+    {
+      "path": "components/custom/timeline.tsx",
+      "type": "registry:component",
+      "target": "src/components/custom/timeline.tsx"
+    }
+  ]
+}
