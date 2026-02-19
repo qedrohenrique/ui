@@ -12,7 +12,7 @@ export default function StatefullButtonPage() {
     useState<React.ComponentProps<typeof StatefullButton>["phase"]>("idle");
 
   const INSTALL_CMD =
-    "npx shadcn@latest add https://multi-select-animated.vercel.app/r/statefull-button.json";
+    "npx shadcn@latest add https://ui-iota-nine.vercel.app/r/statefull-button.json";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(INSTALL_CMD);

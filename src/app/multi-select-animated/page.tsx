@@ -53,7 +53,7 @@ export default function MultiSelectAnimatedPage() {
     useState<ContentItem[]>(contentLorem);
 
   const INSTALL_CMD =
-    "npx shadcn@latest add https://multi-select-animated.vercel.app/r/multi-select-animated.json";
+    "npx shadcn@latest add https://ui-iota-nine.vercel.app/r/multi-select-animated.json";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(INSTALL_CMD);

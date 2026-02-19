@@ -14,7 +14,7 @@ import CollapsibleDrawer, {
 
 export default function CollapsibleDrawerPage() {
   const INSTALL_CMD =
-    "npx shadcn@latest add https://multi-select-animated.vercel.app/r/collapsible-drawer.json";
+    "npx shadcn@latest add https://ui-iota-nine.vercel.app/r/collapsible-drawer.json";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(INSTALL_CMD);

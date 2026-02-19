@@ -56,7 +56,7 @@ const items = [
 
 export default function ExpandableTimelinePage() {
   const INSTALL_CMD =
-    "npx shadcn@latest add https://multi-select-animated.vercel.app/r/expandable-timeline.json";
+    "npx shadcn@latest add https://ui-iota-nine.vercel.app/r/expandable-timeline.json";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(INSTALL_CMD);
