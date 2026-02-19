@@ -11,7 +11,9 @@
       "Bash(powershell -Command \"Get-ChildItem ''D:\\\\projects\\\\ui'' | Select-Object Name\")",
       "Bash(powershell -Command \"Test-Path ''D:\\\\projects\\\\ui\\\\package-lock.json''\")",
       "Bash(powershell -Command \"Test-Path ''D:\\\\projects\\\\ui\\\\bun.lockb''\")",
-      "Bash(powershell -Command \"Set-Location ''D:\\\\projects\\\\ui''; bun install 2>&1\")"
+      "Bash(powershell -Command \"Set-Location ''D:\\\\projects\\\\ui''; bun install 2>&1\")",
+      "WebFetch(domain:bong-toast.vercel.app)",
+      "Bash(npx shadcn@latest add:*)"
     ]
   }
 }
