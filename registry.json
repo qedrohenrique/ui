@@ -145,6 +145,19 @@
           "target": "src/components/custom/reorder-list.tsx"
         }
       ]
+    },
+    {
+      "name": "shader-surface",
+      "type": "registry:component",
+      "title": "Shader Surface",
+      "description": "A WebGL2 gradient surface that follows the pointer, with a CSS gradient fallback and no dependencies.",
+      "files": [
+        {
+          "path": "src/components/custom/shader-surface.tsx",
+          "type": "registry:component",
+          "target": "src/components/custom/shader-surface.tsx"
+        }
+      ]
     }
   ]
 }
