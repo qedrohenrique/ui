@@ -128,6 +128,23 @@
           "target": "src/components/custom/stepper-form.tsx"
         }
       ]
+    },
+    {
+      "name": "reorder-list",
+      "type": "registry:component",
+      "title": "Reorder List",
+      "description": "A drag-to-reorder list with an optional handle and arrow-key reordering for keyboard users.",
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "src/components/custom/reorder-list.tsx",
+          "type": "registry:component",
+          "target": "src/components/custom/reorder-list.tsx"
+        }
+      ]
     }
   ]
 }

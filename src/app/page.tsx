@@ -26,6 +26,9 @@ export default function Home() {
           <Button variant="link" asChild className="w-min !p-0">
             <Link href="/stepper-form">Stepper Form</Link>
           </Button>
+          <Button variant="link" asChild className="w-min !p-0">
+            <Link href="/reorder-list">Reorder List</Link>
+          </Button>
           <div className="flex items-center gap-2">
             <Button variant="link" asChild className="w-min !p-0">
               <Link href="/bong-toast">Bong Toast</Link>
