@@ -23,6 +23,9 @@ export default function Home() {
           <Button variant="link" asChild className="w-min !p-0">
             <Link href="/morphing-card">Morphing Card</Link>
           </Button>
+          <Button variant="link" asChild className="w-min !p-0">
+            <Link href="/stepper-form">Stepper Form</Link>
+          </Button>
           <div className="flex items-center gap-2">
             <Button variant="link" asChild className="w-min !p-0">
               <Link href="/bong-toast">Bong Toast</Link>

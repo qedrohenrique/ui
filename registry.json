@@ -106,6 +106,28 @@
           "target": "src/components/custom/morphing-card.tsx"
         }
       ]
+    },
+    {
+      "name": "stepper-form",
+      "type": "registry:component",
+      "title": "Stepper Form",
+      "description": "A multi-step form that drives an expandable timeline as its progress rail and a statefull button as its submit.",
+      "registryDependencies": [
+        "button",
+        "https://ui-iota-nine.vercel.app/r/statefull-button.json",
+        "https://ui-iota-nine.vercel.app/r/expandable-timeline.json"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "src/components/custom/stepper-form.tsx",
+          "type": "registry:component",
+          "target": "src/components/custom/stepper-form.tsx"
+        }
+      ]
     }
   ]
 }
