@@ -39,13 +39,6 @@ const variantClasses: Record<string, string> = {
   info: "border-l-[3px] border-l-blue-500",
 };
 
-const variantBgColor: Record<string, string> = {
-  success: "bg-emerald-500/10",
-  error: "bg-red-500/10",
-  warning: "bg-amber-500/10",
-  info: "bg-blue-500/10",
-};
-
 const variantIconColor: Record<string, string> = {
   success: "text-emerald-500",
   error: "text-red-500",

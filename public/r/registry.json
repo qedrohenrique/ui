@@ -1,0 +1,163 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "qedrohenrique-ui",
+  "homepage": "https://ui-iota-nine.vercel.app",
+  "items": [
+    {
+      "name": "multi-select-animated",
+      "type": "registry:component",
+      "title": "Multi Select Animated",
+      "description": "An animated multi-select dropdown with search, select all, and spring animations.",
+      "registryDependencies": [
+        "button",
+        "popover",
+        "input",
+        "separator"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "src/components/custom/multi-select-animated.tsx",
+          "type": "registry:component",
+          "target": "src/components/custom/multi-select-animated.tsx"
+        }
+      ]
+    },
+    {
+      "name": "statefull-button",
+      "type": "registry:component",
+      "title": "Statefull Button",
+      "description": "A button with animated phase transitions between idle, loading, and success states.",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "src/components/custom/statefull-button.tsx",
+          "type": "registry:component",
+          "target": "src/components/custom/statefull-button.tsx"
+        }
+      ]
+    },
+    {
+      "name": "expandable-timeline",
+      "type": "registry:component",
+      "title": "Expandable Timeline",
+      "description": "An expandable timeline component with collapsible content items and step indicators.",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/custom/timeline.tsx",
+          "type": "registry:component",
+          "target": "src/components/custom/timeline.tsx"
+        }
+      ]
+    },
+    {
+      "name": "collapsible-drawer",
+      "type": "registry:component",
+      "title": "Collapsible Drawer",
+      "description": "A collapsible drawer component that slides in from any side, with pin and hover-collapse support.",
+      "registryDependencies": [
+        "button",
+        "separator"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "src/components/custom/collapsible-drawer.tsx",
+          "type": "registry:component",
+          "target": "src/components/custom/collapsible-drawer.tsx"
+        }
+      ]
+    },
+    {
+      "name": "morphing-card",
+      "type": "registry:component",
+      "title": "Morphing Card",
+      "description": "A card that morphs into a modal with a shared layout animation, keeping image, title and description continuous.",
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "src/components/custom/morphing-card.tsx",
+          "type": "registry:component",
+          "target": "src/components/custom/morphing-card.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stepper-form",
+      "type": "registry:component",
+      "title": "Stepper Form",
+      "description": "A multi-step form that drives an expandable timeline as its progress rail and a statefull button as its submit.",
+      "registryDependencies": [
+        "button",
+        "https://ui-iota-nine.vercel.app/r/statefull-button.json",
+        "https://ui-iota-nine.vercel.app/r/expandable-timeline.json"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "src/components/custom/stepper-form.tsx",
+          "type": "registry:component",
+          "target": "src/components/custom/stepper-form.tsx"
+        }
+      ]
+    },
+    {
+      "name": "reorder-list",
+      "type": "registry:component",
+      "title": "Reorder List",
+      "description": "A drag-to-reorder list with an optional handle and arrow-key reordering for keyboard users.",
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "src/components/custom/reorder-list.tsx",
+          "type": "registry:component",
+          "target": "src/components/custom/reorder-list.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shader-surface",
+      "type": "registry:component",
+      "title": "Shader Surface",
+      "description": "A WebGL2 gradient surface that follows the pointer, with a CSS gradient fallback and no dependencies.",
+      "files": [
+        {
+          "path": "src/components/custom/shader-surface.tsx",
+          "type": "registry:component",
+          "target": "src/components/custom/shader-surface.tsx"
+        }
+      ]
+    }
+  ]
+}
