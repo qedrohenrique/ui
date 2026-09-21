@@ -1,18 +1,18 @@
 # UI
 
-A shadcn-style installer that drops a fully-styled and animated components.
+A shadcn registry of fully-styled, animated components.
 
 ## Quick start
 
-For example, imagine you want to use the `MultiSelectAnimated` component, you would:
+Every component is served from this repo's shadcn registry, so the shadcn CLI
+installs it along with whatever it depends on:
 
 ```bash
-# add the component to the current folder (default)
-npx @qedrohenrique/create-multi-select-animated@latest
-
-# target a different folder
-npx @qedrohenrique/create-multi-select-animated@latest --path ./apps/web
+npx shadcn@latest add https://ui-iota-nine.vercel.app/r/multi-select-animated.json
 ```
+
+The registry is generated from the components themselves by `bun run
+registry:build`, which also runs as part of `bun run build`.
 
 You can use it as:
 
@@ -37,10 +37,14 @@ export default function Example() {
 Clone this repo and open a Pull Request:
 
 ```bash
-git clone https://github.com/your-user/multiselect-animated.git
-cd multiselect-animated
-npm install
-npm run dev
+git clone https://github.com/qedrohenrique/ui.git
+cd ui
+bun install
+bun run dev
 ```
+
+Adding a component: drop the `.tsx` in `src/components/custom/`, add a demo
+page under `src/app/`, and describe it as an item in `registry.json`. The
+registry JSON under `public/r/` is generated — don't edit it by hand.
 
 Pedro Henrique de Almeida © 2026 - All rights reserved
