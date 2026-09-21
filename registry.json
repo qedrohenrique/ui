@@ -88,6 +88,24 @@
           "target": "src/components/custom/collapsible-drawer.tsx"
         }
       ]
+    },
+    {
+      "name": "morphing-card",
+      "type": "registry:component",
+      "title": "Morphing Card",
+      "description": "A card that morphs into a modal with a shared layout animation, keeping image, title and description continuous.",
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "src/components/custom/morphing-card.tsx",
+          "type": "registry:component",
+          "target": "src/components/custom/morphing-card.tsx"
+        }
+      ]
     }
   ]
 }
