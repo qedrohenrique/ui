@@ -1,0 +1,93 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "qedrohenrique-ui",
+  "homepage": "https://ui-iota-nine.vercel.app",
+  "items": [
+    {
+      "name": "multi-select-animated",
+      "type": "registry:component",
+      "title": "Multi Select Animated",
+      "description": "An animated multi-select dropdown with search, select all, and spring animations.",
+      "registryDependencies": [
+        "button",
+        "popover",
+        "input",
+        "separator"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "src/components/custom/multi-select-animated.tsx",
+          "type": "registry:component",
+          "target": "src/components/custom/multi-select-animated.tsx"
+        }
+      ]
+    },
+    {
+      "name": "statefull-button",
+      "type": "registry:component",
+      "title": "Statefull Button",
+      "description": "A button with animated phase transitions between idle, loading, and success states.",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "src/components/custom/statefull-button.tsx",
+          "type": "registry:component",
+          "target": "src/components/custom/statefull-button.tsx"
+        }
+      ]
+    },
+    {
+      "name": "expandable-timeline",
+      "type": "registry:component",
+      "title": "Expandable Timeline",
+      "description": "An expandable timeline component with collapsible content items and step indicators.",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/custom/timeline.tsx",
+          "type": "registry:component",
+          "target": "src/components/custom/timeline.tsx"
+        }
+      ]
+    },
+    {
+      "name": "collapsible-drawer",
+      "type": "registry:component",
+      "title": "Collapsible Drawer",
+      "description": "A collapsible drawer component that slides in from any side, with pin and hover-collapse support.",
+      "registryDependencies": [
+        "button",
+        "separator"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "src/components/custom/collapsible-drawer.tsx",
+          "type": "registry:component",
+          "target": "src/components/custom/collapsible-drawer.tsx"
+        }
+      ]
+    }
+  ]
+}
